@@ -18,16 +18,23 @@ export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const pathname = usePathname();
 
+    // Close mobile menu on route change
     useEffect(() => {
         setIsOpen(false);
+    }, [pathname]);
 
+    // Handle scroll effect
+    useEffect(() => {
         const handleScroll = () => {
             setScrolled(window.scrollY > 20);
         };
 
         window.addEventListener("scroll", handleScroll);
+        // Check initial scroll
+        handleScroll();
+
         return () => window.removeEventListener("scroll", handleScroll);
-    }, [pathname]);
+    }, []);
 
     return (
         <header
