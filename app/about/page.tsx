@@ -22,7 +22,7 @@ export default function AboutPage() {
                         She completed her medical degree at <strong>Ayub Medical College</strong> and her Psychiatry Residency at the <strong>Morehouse School of Medicine</strong> in Atlanta. She subsequently completed a <strong>Geriatric Psychiatry Fellowship at Stanford University</strong>.
                     </p>
                     <p>
-                        In addition to her private practice, Dr. Khan serves as a Consultant Psychiatrist at <strong>El Camino Hospital</strong> and has worked as a Staff Psychiatrist for the <strong>County of Santa Clara</strong> since 2013, providing care in correctional and public health settings. She has also completed visiting fellowships in <strong>TMS</strong> (Duke University) and <strong>ECT</strong> (Emory University).
+                        In addition to her private practice, Dr. Khan serves as a Consultant Psychiatrist at <strong>El Camino Hospital</strong> and has worked as a Staff Psychiatrist for the <strong>County of Santa Clara</strong> since 2013. She has also completed visiting fellowships in <strong>TMS</strong> (Duke University) and <strong>ECT</strong> (Emory University).
                     </p>
                 </div>
 
@@ -55,15 +55,15 @@ export default function AboutPage() {
                         <ul className="space-y-8 text-base text-[#1A1A1A]">
                             <li>
                                 <div className="font-bold text-[#0A2239]">El Camino Hospital</div>
-                                <div className="text-sm text-[#555555]">Consultant Psychiatrist (2016 – Present)</div>
+                                <div className="text-sm text-[#555555]">Consultant Psychiatrist (2016 to Present)</div>
                             </li>
                             <li>
                                 <div className="font-bold text-[#0A2239]">County of Santa Clara</div>
-                                <div className="text-sm text-[#555555]">Staff Psychiatrist (2013 – 2026)</div>
+                                <div className="text-sm text-[#555555]">Staff Psychiatrist (2013 to 2026)</div>
                             </li>
                             <li>
                                 <div className="font-bold text-[#0A2239]">Private Practice</div>
-                                <div className="text-sm text-[#555555]">Mountain View & San Jose (2002 – Present)</div>
+                                <div className="text-sm text-[#555555]">Mountain View & San Jose (2002 to Present)</div>
                             </li>
                         </ul>
                     </div>

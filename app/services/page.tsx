@@ -20,16 +20,16 @@ export default function ServicesPage() {
         */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Service Item 1 */}
-                    <div className="group bg-white border border-border p-8 rounded-sm hover:border-gold/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <div className="group bg-white border border-border p-6 md:p-8 rounded-sm hover:border-gold/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                         <div className="w-12 h-1 bg-navy/20 mb-6 group-hover:bg-gold transition-colors duration-500" />
                         <h2 className="font-heading text-2xl text-navy mb-4 group-hover:text-navy-light">Psychiatric Evaluation</h2>
                         <p className="text-charcoal text-base leading-relaxed">
-                            A comprehensive assessment (typically 90 minutes) to understand your medical history, current symptoms, and goals. This evaluation forms the foundation of your personalized treatment plan.
+                            A comprehensive assessment to understand your medical history, current symptoms, and goals. This evaluation forms the foundation of your personalized treatment plan.
                         </p>
                     </div>
 
                     {/* Service Item 2 */}
-                    <div className="group bg-white border border-border p-8 rounded-sm hover:border-gold/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <div className="group bg-white border border-border p-6 md:p-8 rounded-sm hover:border-gold/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                         <div className="w-12 h-1 bg-navy/20 mb-6 group-hover:bg-gold transition-colors duration-500" />
                         <h2 className="font-heading text-2xl text-navy mb-4 group-hover:text-navy-light">Medication Management</h2>
                         <p className="text-charcoal text-base leading-relaxed">
@@ -38,7 +38,7 @@ export default function ServicesPage() {
                     </div>
 
                     {/* Service Item 3 */}
-                    <div className="group bg-white border border-border p-8 rounded-sm hover:border-gold/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <div className="group bg-white border border-border p-6 md:p-8 rounded-sm hover:border-gold/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                         <div className="w-12 h-1 bg-navy/20 mb-6 group-hover:bg-gold transition-colors duration-500" />
                         <h2 className="font-heading text-2xl text-navy mb-4 group-hover:text-navy-light">Geriatric Psychiatry</h2>
                         <p className="text-charcoal text-base leading-relaxed">
@@ -47,7 +47,7 @@ export default function ServicesPage() {
                     </div>
 
                     {/* Service Item 4 */}
-                    <div className="group bg-white border border-border p-8 rounded-sm hover:border-gold/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
+                    <div className="group bg-white border border-border p-6 md:p-8 rounded-sm hover:border-gold/50 transition-all duration-300 hover:shadow-lg hover:-translate-y-1">
                         <div className="w-12 h-1 bg-navy/20 mb-6 group-hover:bg-gold transition-colors duration-500" />
                         <h2 className="font-heading text-2xl text-navy mb-4 group-hover:text-navy-light">Consultations & Second Opinions</h2>
                         <p className="text-charcoal text-base leading-relaxed">

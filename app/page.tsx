@@ -71,7 +71,7 @@ export default function Home() {
               <div className="flex flex-col">
                 <span className="text-4xl font-heading text-[#D4AF37] mb-2 opacity-50">01</span>
                 <h3 className="text-lg font-bold text-[#0A2239] mb-1">Contact Us</h3>
-                <p className="text-sm text-[#333333]">Call or email to request an appointment slot.</p>
+                <p className="text-sm text-[#333333]">Call or email to request an initial evaluation.</p>
               </div>
               <div className="flex flex-col">
                 <span className="text-4xl font-heading text-[#D4AF37] mb-2 opacity-50">02</span>
@@ -80,8 +80,8 @@ export default function Home() {
               </div>
               <div className="flex flex-col">
                 <span className="text-4xl font-heading text-[#D4AF37] mb-2 opacity-50">03</span>
-                <h3 className="text-lg font-bold text-[#0A2239] mb-1">Initial Evaluation</h3>
-                <p className="text-sm text-[#333333]">Meet Dr. Khan for a comprehensive 90-minute visit.</p>
+                <h3 className="text-lg font-bold text-[#0A2239] mb-1">Consultation Visit</h3>
+                <p className="text-sm text-[#333333]">Meet Dr. Khan for a comprehensive clinical evaluation.</p>
               </div>
             </div>
           </div>
@@ -105,8 +105,8 @@ export default function Home() {
             <p className="text-sm text-[#1A1A1A] leading-relaxed">Visiting Fellowship (ECT)</p>
           </div>
           <div className="group cursor-default">
-            <h3 className="text-xl font-heading text-[#0A2239] mb-2 group-hover:text-[#D4AF37] transition-colors">ABPN Certified</h3>
-            <p className="text-sm text-[#1A1A1A] leading-relaxed">General & Geriatric Psychiatry</p>
+            <h3 className="text-xl font-heading text-[#0A2239] mb-2 group-hover:text-[#D4AF37] transition-colors">Board Certified</h3>
+            <p className="text-sm text-[#1A1A1A] leading-relaxed">American Board of Psychiatry and Neurology (General & Geriatric)</p>
           </div>
         </div>
       </section>

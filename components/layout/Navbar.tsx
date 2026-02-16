@@ -18,10 +18,21 @@ export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
     const pathname = usePathname();
 
-    // Close mobile menu on route change
+    // Close mobile menu on route change and handle scroll lock
     useEffect(() => {
         setIsOpen(false);
     }, [pathname]);
+
+    useEffect(() => {
+        if (isOpen) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "auto";
+        }
+        return () => {
+            document.body.style.overflow = "auto";
+        };
+    }, [isOpen]);
 
     // Handle scroll effect
     useEffect(() => {
