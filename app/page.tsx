@@ -13,8 +13,8 @@ export default function HomePage() {
       {/* Hero / Introduction */}
       <section className="flex flex-col md:flex-row gap-8 md:gap-12 items-start">
         {/* Headshot */}
-        <div className="w-full md:w-64 shrink-0">
-          <div className="relative w-full aspect-[3/4] md:aspect-[3/4] bg-linen overflow-hidden">
+        <div className="w-full max-w-xs mx-auto md:w-64 md:mx-0 shrink-0">
+          <div className="relative w-full aspect-[3/4] md:aspect-[3/4] bg-linen overflow-hidden shadow-sm">
             <Image
               src="/images/headshot-placeholder.png"
               alt="Dr. Samina Khan, MD"
