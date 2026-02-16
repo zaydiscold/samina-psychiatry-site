@@ -70,6 +70,10 @@ export default function AboutPage() {
                         <li>American Board of Psychiatry and Neurology - Geriatric Psychiatry</li>
                     </ul>
                 </div>
+
+                <div className="mt-20 pt-8 border-t border-border text-center text-sm text-muted">
+                    <p>This website was designed and built with love by her son, <a href="https://zayd.wtf" className="text-navy hover:underline">Zayd Khan</a>.</p>
+                </div>
             </div>
         </div>
     );
