@@ -30,7 +30,7 @@ export default function Home() {
             {/* Primary CTA */}
             <Link
               href="/contact"
-              className="px-8 py-4 bg-[#0A2239] text-[#F9F7F5] font-semibold rounded-sm hover:bg-[#1D3450] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-center tracking-wide text-sm md:text-base border border-[#0A2239]"
+              className="px-8 py-4 bg-[#0A2239] text-white font-semibold rounded-sm hover:bg-[#1D3450] hover:text-white hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-center tracking-wide text-sm md:text-base border border-[#0A2239]"
             >
               Schedule a Visit
             </Link>
@@ -38,7 +38,7 @@ export default function Home() {
             {/* Secondary CTA - "Treatment Options" */}
             <Link
               href="/services"
-              className="px-8 py-4 bg-transparent border border-[#0A2239] text-[#0A2239] font-semibold rounded-sm hover:bg-[#0A2239] hover:text-[#F9F7F5] transition-all duration-300 text-center tracking-wide text-sm md:text-base"
+              className="px-8 py-4 bg-transparent border border-[#0A2239] text-[#0A2239] font-semibold rounded-sm hover:bg-[#0A2239] hover:text-white transition-all duration-300 text-center tracking-wide text-sm md:text-base"
             >
               Treatment Options
             </Link>

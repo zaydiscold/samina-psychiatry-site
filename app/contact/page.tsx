@@ -58,7 +58,7 @@ export default function ContactPage() {
                             allowFullScreen
                             loading="lazy"
                             referrerPolicy="no-referrer-when-downgrade"
-                            className="grayscale hover:grayscale-0 transition-all duration-700"
+                            className="w-full h-full transition-opacity duration-700"
                         />
                         {/* Overlay with Schedule */}
                         <div className="absolute bottom-4 left-4 right-4 bg-white/95 backdrop-blur-sm p-4 border border-border shadow-sm rounded-sm">
