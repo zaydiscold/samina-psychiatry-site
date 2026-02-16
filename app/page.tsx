@@ -1,12 +1,12 @@
-import Image from "next/image";
 import Link from "next/link";
+
+/* Using standard <img> tag to bypass Next.js Image loader issues on local/gh-pages mismatch */
 
 export default function Home() {
   return (
     <div className="flex flex-col animate-fade-up">
 
       {/* Hero Section */}
-      {/* Increased padding-top to pt-32 to prevent Navbar clipping. Added px-6 md:px-12 for edge safety. */}
       <section className="flex flex-col md:flex-row gap-12 items-center md:items-start mb-24 pt-32 px-6 md:px-12 max-w-[1440px] mx-auto w-full">
 
         {/* Text */}
@@ -20,7 +20,6 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5">
-            {/* Hardcoded Colors inline to prevent variable failure */}
             <Link
               href="/contact"
               className="px-8 py-4 bg-[#0A2239] text-[#F9F7F5] font-semibold rounded-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-center tracking-wide text-sm md:text-base border border-[#0A2239]"
@@ -40,16 +39,43 @@ export default function Home() {
 
         {/* Image - Painting Style Headshot */}
         <div className="w-full md:w-2/5 shrink-0 order-1 md:order-2 flex justify-end">
-          {/* Added max-w constraints to prevent massive overflow */}
           <div className="relative w-full max-w-md aspect-[4/5] bg-[#E6E2DE] overflow-hidden border border-[#D1D1D1]/50 rounded-sm shadow-2xl">
-            <Image
-              src="/images/headshot-placeholder.png"
+            <img
+              src="images/headshot-placeholder.png"
               alt="Dr. Samina Khan"
-              fill
-              className="object-cover"
-              priority
-              unoptimized
+              className="object-cover w-full h-full"
+              loading="eager"
             />
+          </div>
+        </div>
+      </section>
+
+      {/* NEW: Patient Journey / Access to Care Section */}
+      <section className="bg-[#F9F7F5] border-y border-[#D1D1D1]/50 py-16 px-6 md:px-12">
+        <div className="max-w-[1440px] mx-auto">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-8">
+            <div className="md:w-1/3">
+              <h2 className="font-heading text-3xl text-[#0A2239] mb-4">Start Your Care</h2>
+              <p className="text-[#333333]">A simple path to beginning your treatment.</p>
+            </div>
+
+            <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-3 gap-8">
+              <div className="flex flex-col">
+                <span className="text-4xl font-heading text-[#D4AF37] mb-2 opacity-50">01</span>
+                <h3 className="text-lg font-bold text-[#0A2239] mb-1">Contact Us</h3>
+                <p className="text-sm text-[#333333]">Call or email to request a consultation.</p>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-4xl font-heading text-[#D4AF37] mb-2 opacity-50">02</span>
+                <h3 className="text-lg font-bold text-[#0A2239] mb-1">Intake</h3>
+                <p className="text-sm text-[#333333]">Complete a brief assessment and insurance check.</p>
+              </div>
+              <div className="flex flex-col">
+                <span className="text-4xl font-heading text-[#D4AF37] mb-2 opacity-50">03</span>
+                <h3 className="text-lg font-bold text-[#0A2239] mb-1">First Visit</h3>
+                <p className="text-sm text-[#333333]">Meet Dr. Khan for a 90-minute evaluation.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -78,7 +104,6 @@ export default function Home() {
       </section>
 
       {/* Focus Areas - De-SaaS'd (Typographic List) */}
-      {/* Increased padding and using different background tone for elegance */}
       <section className="bg-[#F4F2EF] px-6 md:px-12 py-24 w-full">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-[#0A2239]/10 pb-6">
