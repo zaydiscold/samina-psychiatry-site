@@ -1,0 +1,128 @@
+@import "tailwindcss";
+
+@theme inline {
+  /* Warm Established Practice Palette */
+  --color-cream: #FAF8F5;
+  --color-linen: #F5F0EB;
+  --color-stone: #E8E0D8;
+
+  /* Text */
+  --color-charcoal: #2D3436;
+  --color-graphite: #636E72;
+  --color-muted: #8C9196;
+
+  /* Primary - Warm Navy */
+  --color-navy: #1B3A5C;
+  --color-navy-light: #2E5078;
+  --color-navy-dark: #0F2840;
+
+  /* Accents */
+  --color-sage: #7A9E8E;
+  --color-sage-light: #C2D5CC;
+  --color-clay: #C4A882;
+  --color-clay-light: #E0D1BE;
+  --color-terracotta: #B07D62;
+
+  /* Functional */
+  --color-white: #FFFFFF;
+  --color-border: #DDD5CC;
+  --color-error: #C0392B;
+  --color-success: #27AE60;
+
+  /* Fonts */
+  --font-heading: var(--font-heading), "Lora", serif;
+  --font-body: var(--font-body), "Inter", sans-serif;
+}
+
+/* Base */
+body {
+  background-color: var(--color-cream);
+  color: var(--color-charcoal);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+  color: var(--color-navy);
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.4rem;
+}
+
+p {
+  margin-bottom: 1em;
+  max-width: 68ch;
+}
+
+a {
+  color: var(--color-navy);
+  text-decoration: underline;
+  text-decoration-color: var(--color-sage-light);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 0.2s ease;
+}
+
+a:hover {
+  text-decoration-color: var(--color-navy);
+}
+
+/* Selection */
+::selection {
+  background-color: var(--color-sage-light);
+  color: var(--color-navy-dark);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-stone);
+  border-radius: 4px;
+}
+
+/* Utility: Content Container */
+.content-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Reduced Motion */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}
