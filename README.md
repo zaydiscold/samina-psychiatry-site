@@ -1,7 +1,6 @@
 # Dr. Khan Psychiatry Website
 
-**A professional portfolio site for my mom, Dr. Samina Khan.**  
-*Built with love by Zayd Khan.*
+**Psychiatrist professional site for my mom.**
 
 This project is a high-performance, SEO-optimized website for a private psychiatry practice in the Bay Area. It features a "Luxury Editorial" design aesthetic, custom typography, and a mobile-first responsive layout.
 
