@@ -89,7 +89,7 @@ export default function Home() {
       </section>
 
       {/* Credentials */}
-      <section className="border-t border-[#D1D1D1] pt-16 mb-32 px-6 md:px-12 max-w-[1440px] mx-auto w-full">
+      <section className="border-t border-[#D1D1D1] pt-16 mb-24 px-6 md:px-12 max-w-[1440px] mx-auto w-full">
         <h2 className="text-xs font-bold text-[#555555] uppercase tracking-[0.2em] mb-12">Board Certifications & Training</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
           <div className="group cursor-default">
@@ -120,7 +120,7 @@ export default function Home() {
       </section>
 
       {/* Focus Areas */}
-      <section className="bg-[#F4F2EF] px-6 md:px-12 pt-32 pb-48 w-full border-t border-[#D1D1D1]/30">
+      <section className="bg-[#F4F2EF] px-6 md:px-12 pt-20 pb-48 w-full border-t border-[#D1D1D1]/30">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-[#0A2239]/10 pb-6">
             <h2 className="font-heading text-3xl md:text-5xl text-[#0A2239] mt-0">Clinical Focus</h2>
