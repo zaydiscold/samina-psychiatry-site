@@ -23,6 +23,15 @@ The design avoids the "corporate SaaS" look. Instead, I aimed for a **"Professio
 -   **High Contrast:** Dark Charcoal and Navy text on Cream backgrounds for maximum readability.
 -   **No Fluff:** We removed all "marketing speak" and AI-generated filler. The copy is direct, factual, and helpful.
 
+## Deployment
+
+This site uses **GitHub Actions** for deployment.
+
+**Important:** You must configure the repository settings:
+1.  Go to **Settings** > **Pages**.
+2.  Under **Build and deployment**, switch the **Source** to **"GitHub Actions"**.
+3.  The workflow will then automatically build and deploy the site.
+
 ## Development
 
 ```bash
