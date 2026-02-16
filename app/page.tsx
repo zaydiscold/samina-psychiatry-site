@@ -89,9 +89,9 @@ export default function Home() {
       </section>
 
       {/* Credentials */}
-      <section className="border-t border-[#D1D1D1] pt-12 mb-20 px-6 md:px-12 max-w-[1440px] mx-auto w-full">
-        <h2 className="text-xs font-bold text-[#555555] uppercase tracking-[0.2em] mb-10">Board Certifications & Training</h2>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+      <section className="border-t border-[#D1D1D1] pt-16 mb-32 px-6 md:px-12 max-w-[1440px] mx-auto w-full">
+        <h2 className="text-xs font-bold text-[#555555] uppercase tracking-[0.2em] mb-12">Board Certifications & Training</h2>
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-12">
           <div className="group cursor-default">
             <h3 className="text-xl font-heading text-[#0A2239] mb-3 group-hover:text-[#D4AF37] transition-colors tracking-tight">Stanford University</h3>
             <p className="text-sm text-[#1A1A1A] leading-relaxed border-l-2 border-[#D4AF37]/30 pl-4 group-hover:border-[#D4AF37] transition-all">Geriatric Psychiatry Fellowship</p>
@@ -112,7 +112,7 @@ export default function Home() {
       </section>
 
       {/* Focus Areas */}
-      <section className="bg-[#F4F2EF] px-6 md:px-12 py-24 w-full">
+      <section className="bg-[#F4F2EF] px-6 md:px-12 pt-32 pb-48 w-full border-t border-[#D1D1D1]/30">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-[#0A2239]/10 pb-6">
             <h2 className="font-heading text-3xl md:text-5xl text-[#0A2239] mt-0">Clinical Focus</h2>
