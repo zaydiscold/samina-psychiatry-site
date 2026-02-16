@@ -35,11 +35,8 @@ export default function Footer() {
                     </div>
                 </div>
 
-                <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-muted">
+                <div className="border-t border-border mt-12 pt-8 text-center text-sm text-muted">
                     <p>© {new Date().getFullYear()} Samina Khan, MD. All rights reserved.</p>
-                    <p>
-                        Built with love by <a href="https://zayd.wtf" className="text-navy hover:underline">Zayd Khan</a>
-                    </p>
                 </div>
             </div>
         </footer>
