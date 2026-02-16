@@ -1,37 +1,37 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Luxury Editorial Palette */
-  --color-cream: #FAF8F5;
-  --color-linen: #F5F0EB;
-  --color-stone: #E8E0D8;
+  /* Professional Grounded Palette */
+  --color-cream: #F9F7F5;
+  /* Cleaner white/cream */
+  --color-linen: #F0EEEB;
+  --color-stone: #E6E2DE;
 
-  /* Text */
-  --color-charcoal: #2D3436;
-  --color-graphite: #4A4A4A;
-  /* Slightly darker for better contrast */
-  --color-muted: #757575;
+  /* Text - High Contrast */
+  --color-charcoal: #1A1A1A;
+  /* Almost Black */
+  --color-graphite: #333333;
+  --color-muted: #555555;
 
-  /* Primary - Deep Luxury Navy */
-  --color-navy: #0F2840;
-  --color-navy-light: #1B3A5C;
-  --color-navy-dark: #0A1C2E;
+  /* Primary - Corporate Medical Navy */
+  --color-navy: #0A2239;
+  --color-navy-light: #1D3450;
+  --color-navy-dark: #05111D;
 
-  /* Accents - Distinguished */
-  --color-gold: #C5A065;
-  --color-gold-light: #D4B480;
-  --color-slate: #4A6FA5;
+  /* Accents */
+  --color-gold: #BFA15F;
+  --color-slate: #536B78;
 
-  /* Legacy Accents (Keep for compatibility, mapped to new palette) */
+  /* Legacy */
   --color-sage: #7A9E8E;
-  /* Keeping sage as a secondary natural tone */
   --color-sage-light: #C2D5CC;
   --color-clay: #C4A882;
   --color-terracotta: #B07D62;
 
   /* Functional */
   --color-white: #FFFFFF;
-  --color-border: #E0E0E0;
+  --color-border: #D1D1D1;
+  /* Darker border for visibility */
   --color-error: #C0392B;
   --color-success: #27AE60;
 
@@ -45,8 +45,9 @@ body {
   background-color: var(--color-cream);
   color: var(--color-charcoal);
   font-family: var(--font-body);
-  font-size: 15px;
-  line-height: 1.7;
+  font-size: 16px;
+  /* Increased for readability */
+  line-height: 1.6;
 }
 
 /* Typography */
@@ -63,63 +64,50 @@ h6 {
 }
 
 h1 {
-  font-size: 2rem;
-  margin-bottom: 0.75rem;
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
-  margin-top: 2rem;
+  font-size: 1.75rem;
+  margin-bottom: 0.75rem;
+  margin-top: 2.5rem;
 }
 
 h3 {
-  font-size: 1.2rem;
-  margin-bottom: 0.4rem;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 p {
-  margin-bottom: 1em;
-  max-width: 68ch;
+  margin-bottom: 1.25em;
+  max-width: 70ch;
 }
 
 a {
   color: var(--color-navy);
   text-decoration: underline;
-  text-decoration-color: var(--color-sage-light);
+  text-decoration-color: var(--color-navy-light);
   text-underline-offset: 3px;
-  transition: text-decoration-color 0.2s ease;
+  transition: all 0.2s ease;
 }
 
 a:hover {
-  text-decoration-color: var(--color-navy);
+  text-decoration-color: var(--color-gold);
+  color: var(--color-navy-light);
 }
 
 /* Selection */
 ::selection {
-  background-color: var(--color-sage-light);
-  color: var(--color-navy-dark);
-}
-
-/* Scrollbar */
-::-webkit-scrollbar {
-  width: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: var(--color-cream);
-}
-
-::-webkit-scrollbar-thumb {
-  background: var(--color-stone);
-  border-radius: 4px;
+  background-color: var(--color-navy-light);
+  color: var(--color-white);
 }
 
 /* Utility: Content Container */
 .content-container {
-  max-width: 960px;
+  max-width: 1024px;
   margin: 0 auto;
-  padding: 0 1.5rem;
+  padding: 0 2rem;
 }
 
 /* Reduced Motion */
