@@ -1,6 +1,12 @@
 import Link from "next/link";
 
-/* Using standard <img> tag to bypass Next.js Image loader issues on local/gh-pages mismatch */
+/* 
+  HOME PAGE REWRITE
+  - Strictly adhering to "Humanizer" skill: No em dashes, no "slop" (vibrant, tapestry, etc).
+  - Fixed Button Hover: Removing inline styles that blocked hover states.
+  - Streamlined "Start Your Care": Removed insurance check (cash pay).
+  - Renamed "Our Services" -> "Treatment Options" (less predatory).
+*/
 
 export default function Home() {
   return (
@@ -12,27 +18,29 @@ export default function Home() {
         {/* Text */}
         <div className="w-full md:w-3/5 order-2 md:order-1 flex flex-col justify-center">
           <h1 className="font-heading text-4xl md:text-5xl lg:text-7xl text-[#0A2239] font-bold mb-8 leading-[1.1] tracking-tight">
-            Compassionate <br />
-            Psychiatric Care
+            Psychiatry<br />
+            Rooted in <br />
+            Understanding
           </h1>
           <p className="text-lg md:text-xl text-[#333333] font-medium mb-10 leading-relaxed max-w-xl">
-            Dr. Samina Khan is a Board Certified Psychiatrist dedicated to improving your quality of life through comprehensive evaluation, medication management, and personalized treatment plans.
+            Dr. Samina Khan brings over 20 years of medical experience to the Bay Area. She specializes in finding stability for patients with complex needs, from treatment-resistant depression to geriatric memory care.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-5">
+            {/* Primary CTA */}
             <Link
               href="/contact"
-              className="px-8 py-4 bg-[#0A2239] text-[#F9F7F5] font-semibold rounded-sm hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-center tracking-wide text-sm md:text-base border border-[#0A2239]"
-              style={{ backgroundColor: '#0A2239', color: '#F9F7F5' }}
+              className="px-8 py-4 bg-[#0A2239] text-[#F9F7F5] font-semibold rounded-sm hover:bg-[#1D3450] hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-center tracking-wide text-sm md:text-base border border-[#0A2239]"
             >
-              Contact Office
+              Schedule a Visit
             </Link>
+
+            {/* Secondary CTA - "Treatment Options" */}
             <Link
               href="/services"
               className="px-8 py-4 bg-transparent border border-[#0A2239] text-[#0A2239] font-semibold rounded-sm hover:bg-[#0A2239] hover:text-[#F9F7F5] transition-all duration-300 text-center tracking-wide text-sm md:text-base"
-              style={{ borderColor: '#0A2239', color: '#0A2239' }}
             >
-              Our Services
+              Treatment Options
             </Link>
           </div>
         </div>
@@ -50,37 +58,37 @@ export default function Home() {
         </div>
       </section>
 
-      {/* NEW: Patient Journey / Access to Care Section */}
+      {/* Patient Journey / Access to Care Section */}
       <section className="bg-[#F9F7F5] border-y border-[#D1D1D1]/50 py-16 px-6 md:px-12">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex flex-col md:flex-row items-center justify-between gap-8">
             <div className="md:w-1/3">
-              <h2 className="font-heading text-3xl text-[#0A2239] mb-4">Start Your Care</h2>
-              <p className="text-[#333333]">A simple path to beginning your treatment.</p>
+              <h2 className="font-heading text-3xl text-[#0A2239] mb-4">Becoming a Patient</h2>
+              <p className="text-[#333333]">A straightforward path to getting help.</p>
             </div>
 
             <div className="md:w-2/3 grid grid-cols-1 sm:grid-cols-3 gap-8">
               <div className="flex flex-col">
                 <span className="text-4xl font-heading text-[#D4AF37] mb-2 opacity-50">01</span>
                 <h3 className="text-lg font-bold text-[#0A2239] mb-1">Contact Us</h3>
-                <p className="text-sm text-[#333333]">Call or email to request a consultation.</p>
+                <p className="text-sm text-[#333333]">Call or email to request an appointment slot.</p>
               </div>
               <div className="flex flex-col">
                 <span className="text-4xl font-heading text-[#D4AF37] mb-2 opacity-50">02</span>
-                <h3 className="text-lg font-bold text-[#0A2239] mb-1">Intake</h3>
-                <p className="text-sm text-[#333333]">Complete a brief assessment and insurance check.</p>
+                <h3 className="text-lg font-bold text-[#0A2239] mb-1">Phone Intake</h3>
+                <p className="text-sm text-[#333333]">We briefly discuss your needs and answer questions.</p>
               </div>
               <div className="flex flex-col">
                 <span className="text-4xl font-heading text-[#D4AF37] mb-2 opacity-50">03</span>
-                <h3 className="text-lg font-bold text-[#0A2239] mb-1">First Visit</h3>
-                <p className="text-sm text-[#333333]">Meet Dr. Khan for a 90-minute evaluation.</p>
+                <h3 className="text-lg font-bold text-[#0A2239] mb-1">Initial Evaluation</h3>
+                <p className="text-sm text-[#333333]">Meet Dr. Khan for a comprehensive 90-minute visit.</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Credentials - Simplified & Direct */}
+      {/* Credentials */}
       <section className="border-t border-[#D1D1D1] pt-12 mb-20 px-6 md:px-12 max-w-[1440px] mx-auto w-full">
         <h2 className="text-xs font-bold text-[#555555] uppercase tracking-[0.2em] mb-10">Board Certifications & Training</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
@@ -103,13 +111,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Focus Areas - De-SaaS'd (Typographic List) */}
+      {/* Focus Areas */}
       <section className="bg-[#F4F2EF] px-6 md:px-12 py-24 w-full">
         <div className="max-w-[1440px] mx-auto">
           <div className="flex flex-col md:flex-row justify-between items-end mb-16 border-b border-[#0A2239]/10 pb-6">
-            <h2 className="font-heading text-3xl md:text-5xl text-[#0A2239] mt-0">Areas of Focus</h2>
+            <h2 className="font-heading text-3xl md:text-5xl text-[#0A2239] mt-0">Clinical Focus</h2>
             <Link href="/conditions" className="text-[#0A2239] font-medium hover:text-[#D4AF37] transition-colors mt-6 md:mt-0 decoration-1 underline-offset-8 border-b border-[#0A2239] pb-1 hover:border-[#D4AF37]">
-              View All Conditions
+              Conditions Treated
             </Link>
           </div>
 
