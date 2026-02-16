@@ -40,7 +40,7 @@ export default function Navbar() {
         <header
             className={cn(
                 "fixed top-0 left-0 right-0 z-50 transition-all duration-500",
-                scrolled ? "bg-cream/95 backdrop-blur-md border-b border-border py-3" : "bg-transparent py-6"
+                scrolled ? "bg-cream/95 backdrop-blur-md border-b border-border py-3 shadow-sm" : "bg-cream/50 py-6"
             )}
         >
             <div className="content-container flex items-center justify-between">
@@ -78,9 +78,9 @@ export default function Navbar() {
                     ))}
                     <a
                         href="tel:408-568-8628"
-                        className="text-xs font-bold text-navy no-underline border border-navy/20 px-5 py-2.5 hover:bg-navy hover:text-white hover:border-navy transition-all duration-300 tracking-wider uppercase rounded-sm"
+                        className="text-xs font-bold text-navy no-underline border border-navy px-5 py-2.5 hover:bg-navy hover:text-white transition-all duration-300 tracking-wider uppercase rounded-sm"
                     >
-                        Inquire
+                        (408) 568-8628
                     </a>
                 </nav>
 
@@ -128,9 +128,9 @@ export default function Navbar() {
                     <div className="w-12 h-px bg-gold my-4" />
                     <a
                         href="tel:408-568-8628"
-                        className="font-body text-sm font-semibold text-navy uppercase tracking-widest no-underline"
+                        className="font-body text-xl font-semibold text-navy uppercase tracking-widest no-underline border-b border-navy pb-1"
                     >
-                        (408) 568-8628
+                        Call (408) 568-8628
                     </a>
                 </nav>
             </div>

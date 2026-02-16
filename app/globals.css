@@ -97,9 +97,9 @@ a:hover {
   color: var(--color-navy-light);
 }
 
-/* Selection */
+/* Selection - High Contrast Fixed */
 ::selection {
-  background-color: var(--color-navy-light);
+  background-color: var(--color-navy);
   color: var(--color-white);
 }
 
@@ -108,6 +108,23 @@ a:hover {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0 2rem;
+}
+
+/* Pizzazz: Entrance Animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
 }
 
 /* Reduced Motion */
