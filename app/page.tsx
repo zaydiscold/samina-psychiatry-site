@@ -30,7 +30,7 @@ export default function Home() {
             {/* Primary CTA */}
             <Link
               href="/contact"
-              className="px-8 py-4 bg-[#0A2239] text-white font-semibold rounded-sm hover:bg-[#1D3450] hover:text-white hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-center tracking-wide text-sm md:text-base border border-[#0A2239]"
+              className="px-8 py-4 bg-[#0A2239] !text-white font-semibold rounded-sm hover:bg-[#1D3450] hover:!text-white hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300 text-center tracking-wide text-sm md:text-base border border-[#0A2239]"
             >
               Schedule a Visit
             </Link>
@@ -38,7 +38,7 @@ export default function Home() {
             {/* Secondary CTA - "Treatment Options" */}
             <Link
               href="/services"
-              className="px-8 py-4 bg-transparent border border-[#0A2239] text-[#0A2239] font-semibold rounded-sm hover:bg-[#0A2239] hover:text-white transition-all duration-300 text-center tracking-wide text-sm md:text-base"
+              className="px-8 py-4 bg-transparent border border-[#0A2239] text-[#0A2239] font-semibold rounded-sm hover:bg-[#0A2239] hover:!text-white transition-all duration-300 text-center tracking-wide text-sm md:text-base"
             >
               Treatment Options
             </Link>
@@ -76,7 +76,7 @@ export default function Home() {
               <div className="flex flex-col">
                 <span className="text-4xl font-heading text-[#D4AF37] mb-2 opacity-50">02</span>
                 <h3 className="text-lg font-bold text-[#0A2239] mb-1">Phone Intake</h3>
-                <p className="text-sm text-[#333333]">We briefly discuss your needs and answer questions.</p>
+                <p className="text-sm text-[#333333]">We briefly discuss your needs and answer any questions.</p>
               </div>
               <div className="flex flex-col">
                 <span className="text-4xl font-heading text-[#D4AF37] mb-2 opacity-50">03</span>
@@ -93,20 +93,20 @@ export default function Home() {
         <h2 className="text-xs font-bold text-[#555555] uppercase tracking-[0.2em] mb-10">Board Certifications & Training</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
           <div className="group cursor-default">
-            <h3 className="text-xl font-heading text-[#0A2239] mb-2 group-hover:text-[#D4AF37] transition-colors">Stanford University</h3>
-            <p className="text-sm text-[#1A1A1A] leading-relaxed">Geriatric Psychiatry Fellowship</p>
+            <h3 className="text-xl font-heading text-[#0A2239] mb-3 group-hover:text-[#D4AF37] transition-colors tracking-tight">Stanford University</h3>
+            <p className="text-sm text-[#1A1A1A] leading-relaxed border-l-2 border-[#D4AF37]/30 pl-4 group-hover:border-[#D4AF37] transition-all">Geriatric Psychiatry Fellowship</p>
           </div>
           <div className="group cursor-default">
-            <h3 className="text-xl font-heading text-[#0A2239] mb-2 group-hover:text-[#D4AF37] transition-colors">Duke University</h3>
-            <p className="text-sm text-[#1A1A1A] leading-relaxed">Visiting Fellowship (TMS)</p>
+            <h3 className="text-xl font-heading text-[#0A2239] mb-3 group-hover:text-[#D4AF37] transition-colors tracking-tight">Duke University</h3>
+            <p className="text-sm text-[#1A1A1A] leading-relaxed border-l-2 border-[#D4AF37]/30 pl-4 group-hover:border-[#D4AF37] transition-all">Visiting Fellowship (TMS)</p>
           </div>
           <div className="group cursor-default">
-            <h3 className="text-xl font-heading text-[#0A2239] mb-2 group-hover:text-[#D4AF37] transition-colors">Emory University</h3>
-            <p className="text-sm text-[#1A1A1A] leading-relaxed">Visiting Fellowship (ECT)</p>
+            <h3 className="text-xl font-heading text-[#0A2239] mb-3 group-hover:text-[#D4AF37] transition-colors tracking-tight">Emory University</h3>
+            <p className="text-sm text-[#1A1A1A] leading-relaxed border-l-2 border-[#D4AF37]/30 pl-4 group-hover:border-[#D4AF37] transition-all">Visiting Fellowship (ECT)</p>
           </div>
           <div className="group cursor-default">
-            <h3 className="text-xl font-heading text-[#0A2239] mb-2 group-hover:text-[#D4AF37] transition-colors">Board Certified</h3>
-            <p className="text-sm text-[#1A1A1A] leading-relaxed">American Board of Psychiatry and Neurology (General & Geriatric)</p>
+            <h3 className="text-xl font-heading text-[#0A2239] mb-3 group-hover:text-[#D4AF37] transition-colors tracking-tight">Board Certified</h3>
+            <p className="text-sm text-[#1A1A1A] leading-relaxed border-l-2 border-[#D4AF37]/30 pl-4 group-hover:border-[#D4AF37] transition-all">American Board of Psychiatry and Neurology (General & Geriatric)</p>
           </div>
         </div>
       </section>
