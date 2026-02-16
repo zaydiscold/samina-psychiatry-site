@@ -47,6 +47,11 @@ export default function AboutPage() {
                                 <div className="font-bold text-[#0A2239]">Morehouse School of Medicine</div>
                                 <div className="text-sm text-[#555555]">Psychiatry Residency & M.D.</div>
                             </li>
+                            {/* Placeholder for future education */}
+                            <li className="opacity-50 dashed-border p-2">
+                                <div className="font-bold text-[#0A2239]">[Additional Training/Certifications]</div>
+                                <div className="text-sm text-[#555555]">To be added</div>
+                            </li>
                         </ul>
                     </div>
 
@@ -64,6 +69,11 @@ export default function AboutPage() {
                             <li>
                                 <div className="font-bold text-[#0A2239]">Private Practice</div>
                                 <div className="text-sm text-[#555555]">Mountain View & San Jose (2002 to Present)</div>
+                            </li>
+                            {/* Placeholder for past experience */}
+                            <li className="opacity-50 dashed-border p-2">
+                                <div className="font-bold text-[#0A2239]">[Previous Roles]</div>
+                                <div className="text-sm text-[#555555]">To be added</div>
                             </li>
                         </ul>
                     </div>
