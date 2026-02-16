@@ -1,31 +1,37 @@
 @import "tailwindcss";
 
 @theme inline {
-  /* Warm Established Practice Palette */
+  /* Luxury Editorial Palette */
   --color-cream: #FAF8F5;
   --color-linen: #F5F0EB;
   --color-stone: #E8E0D8;
 
   /* Text */
   --color-charcoal: #2D3436;
-  --color-graphite: #636E72;
-  --color-muted: #8C9196;
+  --color-graphite: #4A4A4A;
+  /* Slightly darker for better contrast */
+  --color-muted: #757575;
 
-  /* Primary - Warm Navy */
-  --color-navy: #1B3A5C;
-  --color-navy-light: #2E5078;
-  --color-navy-dark: #0F2840;
+  /* Primary - Deep Luxury Navy */
+  --color-navy: #0F2840;
+  --color-navy-light: #1B3A5C;
+  --color-navy-dark: #0A1C2E;
 
-  /* Accents */
+  /* Accents - Distinguished */
+  --color-gold: #C5A065;
+  --color-gold-light: #D4B480;
+  --color-slate: #4A6FA5;
+
+  /* Legacy Accents (Keep for compatibility, mapped to new palette) */
   --color-sage: #7A9E8E;
+  /* Keeping sage as a secondary natural tone */
   --color-sage-light: #C2D5CC;
   --color-clay: #C4A882;
-  --color-clay-light: #E0D1BE;
   --color-terracotta: #B07D62;
 
   /* Functional */
   --color-white: #FFFFFF;
-  --color-border: #DDD5CC;
+  --color-border: #E0E0E0;
   --color-error: #C0392B;
   --color-success: #27AE60;
 

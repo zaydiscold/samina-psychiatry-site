@@ -1,88 +1,78 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-    title: "Contact & Appointments",
-    description: "Schedule a consultation with Dr. Samina Khan in Mountain View, CA.",
+    title: "Inquire | Samina Khan, MD",
+    description: "Contact the office of Dr. Samina Khan in Mountain View, CA.",
 };
 
 export default function ContactPage() {
     return (
-        <div className="max-w-4xl mx-auto space-y-16">
-            <section className="text-center">
-                <p className="text-sm font-medium text-sage uppercase tracking-wider mb-2">
-                    Get in Touch
-                </p>
-                <h1 className="text-3xl md:text-4xl font-heading font-semibold text-navy mb-6">
-                    Contact & Appointments
-                </h1>
-                <p className="text-lg text-graphite leading-relaxed max-w-2xl mx-auto">
-                    Dr. Khan is currently accepting new patients. Please contact the office directly
-                    to discuss scheduling an initial evaluation.
-                </p>
-            </section>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-                {/* Contact Info */}
-                <div className="space-y-8 bg-white p-8 border border-border">
-                    <div>
-                        <h3 className="text-sm font-bold text-sage uppercase tracking-wider mb-3">Phone</h3>
-                        <p className="text-2xl font-heading text-navy font-semibold mb-1">
-                            (408) 568-8628
-                        </p>
-                        <p className="text-sm text-muted">
-                            Monday – Friday, 9:00 AM – 5:00 PM
-                        </p>
+        <div className="pt-20 md:pt-32 min-h-screen bg-white">
+            <div className="grid grid-cols-1 lg:grid-cols-2 min-h-[80vh]">
+                {/* Left: Info */}
+                <div className="bg-navy text-white px-8 md:px-20 py-20 flex flex-col justify-center relative overflow-hidden">
+                    {/* Texture & Decor */}
+                    <div className="absolute inset-0 opacity-10 bg-[url('https://www.transparenttextures.com/patterns/noise-lines.png')] mix-blend-overlay pointer-events-none" />
+                    <div className="absolute top-0 right-0 p-12 opacity-10">
+                        <svg className="w-64 h-64" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" /></svg>
                     </div>
 
-                    <div>
-                        <h3 className="text-sm font-bold text-sage uppercase tracking-wider mb-3">Location</h3>
-                        <address className="not-italic text-charcoal space-y-1">
-                            <p className="font-medium">Mountain View Psychiatry</p>
-                            <p>2500 Hospital Drive, Suite 3A</p>
-                            <p>Mountain View, CA 94040</p>
-                        </address>
-                    </div>
+                    <div className="relative z-10">
+                        <p className="text-xs font-bold text-gold uppercase tracking-[0.25em] mb-8">
+                            The Office
+                        </p>
+                        <h1 className="font-heading text-4xl md:text-5xl mb-12">
+                            Begin the conversation.
+                        </h1>
 
-                    <div>
-                        <h3 className="text-sm font-bold text-sage uppercase tracking-wider mb-3">Emergency</h3>
-                        <p className="text-sm text-charcoal leading-relaxed">
-                            If you are experiencing a medical or psychiatric emergency, please call 911
-                            or proceed to the nearest emergency room immediately.
-                        </p>
-                    </div>
-                </div>
+                        <div className="space-y-12">
+                            <div>
+                                <h3 className="text-xs font-bold text-white/50 uppercase tracking-widest mb-4">Location</h3>
+                                <address className="not-italic text-lg md:text-xl font-light leading-relaxed text-white/90">
+                                    2500 Hospital Drive, Suite 3A<br />
+                                    Mountain View, California 94040
+                                </address>
+                                <p className="text-sm text-gold mt-4 italic">Adjacent to El Camino Hospital</p>
+                            </div>
 
-                {/* Essential Info */}
-                <div className="space-y-8 py-4">
-                    <div>
-                        <h3 className="font-heading text-xl text-navy mb-3">Insurance & Payment</h3>
-                        <p className="text-charcoal leading-relaxed mb-4">
-                            Dr. Khan operates as an <strong>out-of-network</strong> provider. This allows her
-                            to spend more time with each patient and provide highly personalized care without
-                            insurance-imposed limitations.
-                        </p>
-                        <p className="text-charcoal leading-relaxed">
-                            Payment is due at the time of service. We will provide you with a monthly "superbill"
-                            that you can submit to your insurance carrier for reimbursement, subject to your
-                            plan's out-of-network benefits.
-                        </p>
-                    </div>
+                            <div>
+                                <h3 className="text-xs font-bold text-white/50 uppercase tracking-widest mb-4">Contact</h3>
+                                <p className="text-xl md:text-2xl font-heading text-white mb-2">(408) 568-8628</p>
+                                <a href="mailto:office@saminakhanmd.com" className="text-white/70 hover:text-white transition-colors border-b border-white/20 pb-0.5">
+                                    office@saminakhanmd.com
+                                </a>
+                            </div>
 
-                    <div>
-                        <h3 className="font-heading text-xl text-navy mb-3">Telehealth</h3>
-                        <p className="text-charcoal leading-relaxed">
-                            Secure video appointments are available for established patients. Initial visits
-                            are typically conducted in-person to ensure a comprehensive assessment.
-                        </p>
+                            <div>
+                                <h3 className="text-xs font-bold text-white/50 uppercase tracking-widest mb-4">Practice Policy</h3>
+                                <p className="text-sm text-white/70 leading-relaxed max-w-md">
+                                    Dr. Khan manages a private, out-of-network practice to ensure the highest standard of personalized care.
+                                    Receipts are provided for insurance reimbursement.
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            {/* Map Placeholder or simple divider */}
-            <div className="border-t border-border pt-8 text-center">
-                <p className="text-sm text-muted">
-                    Located adjacent to El Camino Hospital in Mountain View.
-                </p>
+                {/* Right: Map / Visual */}
+                <div className="bg-linen relative min-h-[400px] lg:min-h-auto flex items-center justify-center p-12">
+                    <div className="text-center">
+                        <div className="w-32 h-32 mx-auto bg-cream rounded-full flex items-center justify-center mb-6 shadow-sm border border-gold/20">
+                            <span className="font-heading text-4xl text-navy italic">Sk</span>
+                        </div>
+                        <h2 className="font-heading text-2xl text-navy mb-2">Samina Khan, MD</h2>
+                        <p className="text-sm text-charcoal/60 uppercase tracking-widest">Psychiatry</p>
+
+                        <div className="mt-12 p-8 border border-navy/10 max-w-sm mx-auto bg-white/50 backdrop-blur-sm">
+                            <p className="text-sm text-navy/80 leading-relaxed">
+                                "We are currently accepting new patients for evaluation and treatment."
+                            </p>
+                            <a href="tel:408-568-8628" className="block mt-6 bg-navy text-white text-xs font-bold uppercase tracking-widest py-4 hover:bg-navy-light transition-colors">
+                                Call to Schedule
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     );

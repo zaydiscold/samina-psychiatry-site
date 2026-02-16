@@ -1,152 +1,154 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 
 export const metadata: Metadata = {
-    title: "About Dr. Khan",
+    title: "Biography | Samina Khan, MD",
     description:
-        "Learn about Dr. Samina Khan's education, fellowships at Stanford, Duke, and Emory, and over 20 years of experience in psychiatry.",
+        "Dr. Samina Khan's journey from medical school in Pakistan to fellowships at Stanford, Duke, and Emory. A dedicated career in psychiatric medicine.",
 };
 
 export default function AboutPage() {
     return (
-        <div className="space-y-14">
-            {/* Header */}
-            <section>
-                <p className="text-sm font-medium text-sage uppercase tracking-wider mb-2">
-                    About
-                </p>
-                <h1 className="text-3xl font-heading font-semibold text-navy mb-6">
-                    About Dr. Khan
-                </h1>
-                <div className="space-y-4 text-graphite leading-relaxed">
-                    <p>
-                        Dr. Samina Khan is a board-certified psychiatrist with dual certification in General
-                        and Geriatric Psychiatry from the American Board of Psychiatry and Neurology. She has
-                        been practicing in the Bay Area for more than two decades, bringing quiet expertise
-                        and genuine care to every patient she sees.
+        <div className="pt-20 md:pt-32 space-y-24 md:space-y-32">
+            {/* Intro Narrative */}
+            <section className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+                <div className="order-2 lg:order-1">
+                    <p className="text-xs font-bold text-gold uppercase tracking-[0.25em] mb-6">
+                        The Physician's Path
                     </p>
-                    <p>
-                        She received her medical degree from Morehouse School of Medicine in Atlanta, Georgia,
-                        and went on to complete advanced fellowship training at three of the country's leading
-                        academic medical centers: Geriatric Psychiatry at Stanford University, Transcranial
-                        Magnetic Stimulation (TMS) at Duke University, and Electroconvulsive Therapy (ECT)
-                        at Emory University.
-                    </p>
-                    <p>
-                        Over the course of her career, Dr. Khan has worked across academic hospitals, community
-                        clinics, the County of Santa Clara correctional system, and private practice. This range
-                        of experience has given her a broad perspective on psychiatric illness and a practical,
-                        patient-centered approach to treatment.
-                    </p>
-                    <p>
-                        She currently maintains a private practice in Mountain View and serves as a Consultant
-                        Psychiatrist at El Camino Hospital.
-                    </p>
+                    <h1 className="font-heading text-4xl md:text-5xl text-navy leading-tight mb-8">
+                        <span className="italic font-normal block mb-2">From Academic Rigor</span>
+                        to Private Practice.
+                    </h1>
+                    <div className="space-y-6 text-charcoal/80 text-lg font-light leading-relaxed">
+                        <p>
+                            Dr. Samina Khan’s career is defined by a pursuit of excellence across the full
+                            spectrum of psychiatric care. Her journey began with a medical degree from
+                            Morehouse School of Medicine, followed by a series of rigorous fellowships at
+                            three of the nation’s most prestigious institutions.
+                        </p>
+                        <p>
+                            She refined her expertise in Geriatric Psychiatry at <strong className="text-navy font-medium">Stanford University</strong>,
+                            mastered Transcranial Magnetic Stimulation (TMS) at <strong className="text-navy font-medium">Duke University</strong>,
+                            and advanced her knowledge of Electroconvulsive Therapy (ECT) at <strong className="text-navy font-medium">Emory University</strong>.
+                        </p>
+                        <p>
+                            Today, she brings this depth of academic knowledge to her private practice in
+                            Mountain View, offering patients a level of care that is both clinically sophisticated
+                            and deeply human.
+                        </p>
+                    </div>
                 </div>
-            </section>
-
-            {/* Education */}
-            <section>
-                <h2 className="font-heading text-navy text-xl mb-6">Education & Training</h2>
-                <div className="space-y-5">
-                    {[
-                        {
-                            title: "Geriatric Psychiatry Fellowship",
-                            institution: "Stanford University School of Medicine",
-                        },
-                        {
-                            title: "TMS Fellowship",
-                            institution: "Duke University Medical Center",
-                        },
-                        {
-                            title: "ECT Fellowship",
-                            institution: "Emory University School of Medicine",
-                        },
-                        {
-                            title: "Psychiatry Residency",
-                            institution: "Morehouse School of Medicine, Atlanta, GA",
-                        },
-                        {
-                            title: "Doctor of Medicine (MD)",
-                            institution: "Morehouse School of Medicine, Atlanta, GA",
-                        },
-                        {
-                            title: "Bachelor of Medicine, Bachelor of Surgery (MBBS)",
-                            institution: "Ayub Medical College, University of Peshawar",
-                        },
-                    ].map((item) => (
-                        <div key={item.title} className="border-l-2 border-sage-light pl-5">
-                            <p className="font-semibold text-navy m-0">{item.title}</p>
-                            <p className="text-sm text-graphite m-0">{item.institution}</p>
-                        </div>
-                    ))}
-                </div>
-            </section>
-
-            {/* Certifications */}
-            <section className="bg-white p-6 md:p-8 border border-border">
-                <h2 className="font-heading text-navy text-xl mt-0 mb-5">Board Certifications & Licensure</h2>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div className="flex items-start gap-3">
-                        <span className="w-2 h-2 mt-2 bg-sage rounded-full shrink-0" />
-                        <div>
-                            <p className="font-medium text-charcoal m-0">General Psychiatry</p>
-                            <p className="text-sm text-graphite m-0">American Board of Psychiatry and Neurology</p>
-                        </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                        <span className="w-2 h-2 mt-2 bg-sage rounded-full shrink-0" />
-                        <div>
-                            <p className="font-medium text-charcoal m-0">Geriatric Psychiatry</p>
-                            <p className="text-sm text-graphite m-0">American Board of Psychiatry and Neurology</p>
-                        </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                        <span className="w-2 h-2 mt-2 bg-sage rounded-full shrink-0" />
-                        <div>
-                            <p className="font-medium text-charcoal m-0">Medical License</p>
-                            <p className="text-sm text-graphite m-0">State of California</p>
-                        </div>
-                    </div>
-                    <div className="flex items-start gap-3">
-                        <span className="w-2 h-2 mt-2 bg-sage rounded-full shrink-0" />
-                        <div>
-                            <p className="font-medium text-charcoal m-0">DEA Licensed</p>
-                            <p className="text-sm text-graphite m-0">Controlled Substance Prescribing</p>
+                <div className="order-1 lg:order-2">
+                    <div className="relative w-full aspect-[4/5] bg-linen overflow-hidden shadow-xl">
+                        {/* Abstract visual for About - perhaps a different crop or placeholder */}
+                        <div className="absolute inset-0 bg-navy/5" />
+                        <div className="absolute inset-0 flex items-center justify-center text-navy/10">
+                            {/* Decorative Element */}
+                            <svg className="w-32 h-32 opacity-20" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zm0 9l2.5-1.25L12 8.5l-2.5 1.25L12 11zm0 2.5l-5-2.5-5 2.5L12 22l10-8.5-5-2.5-5 2.5z" />
+                            </svg>
                         </div>
                     </div>
                 </div>
             </section>
 
-            {/* Professional Experience */}
-            <section>
-                <h2 className="font-heading text-navy text-xl mb-6">Professional Experience</h2>
-                <div className="space-y-6">
-                    {[
-                        {
-                            role: "Consultant Psychiatrist",
-                            org: "El Camino Hospital, Mountain View, CA",
-                            period: "2016 to Present",
-                        },
-                        {
-                            role: "Staff Psychiatrist",
-                            org: "County of Santa Clara, CA",
-                            period: "2013 to 2026",
-                        },
-                        {
-                            role: "Private Practice",
-                            org: "Bay Area, CA",
-                            period: "2002 to Present",
-                        },
-                    ].map((item) => (
-                        <div key={item.role + item.org} className="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
-                            <div className="flex-1">
-                                <p className="font-semibold text-navy m-0">{item.role}</p>
-                                <p className="text-sm text-graphite m-0">{item.org}</p>
+            {/* Curriculum Vitae Styled */}
+            <section className="bg-linen/30 py-20 px-6 border-y border-border/50">
+                <div className="max-w-screen-lg mx-auto">
+                    <div className="text-center mb-16">
+                        <h2 className="font-heading text-3xl text-navy italic mb-4">Curriculum Vitae</h2>
+                        <div className="w-12 h-px bg-gold mx-auto" />
+                    </div>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-16 md:gap-24">
+                        {/* Education */}
+                        <div>
+                            <h3 className="text-xs font-bold text-slate uppercase tracking-widest mb-8">Education & Fellowships</h3>
+                            <div className="space-y-10 border-l border-border pl-8 relative">
+                                {[
+                                    {
+                                        title: "Geriatric Psychiatry Fellowship",
+                                        inst: "Stanford University School of Medicine",
+                                        loc: "Stanford, CA"
+                                    },
+                                    {
+                                        title: "TMS Visiting Fellowship",
+                                        inst: "Duke University Medical Center",
+                                        loc: "Durham, NC"
+                                    },
+                                    {
+                                        title: "ECT Visiting Fellowship",
+                                        inst: "Emory University School of Medicine",
+                                        loc: "Atlanta, GA"
+                                    },
+                                    {
+                                        title: "Psychiatry Residency",
+                                        inst: "Morehouse School of Medicine",
+                                        loc: "Atlanta, GA"
+                                    },
+                                    {
+                                        title: "Doctor of Medicine (M.D.)",
+                                        inst: "Morehouse School of Medicine",
+                                        loc: "Atlanta, GA"
+                                    }
+                                ].map((item) => (
+                                    <div key={item.title} className="relative">
+                                        <span className="absolute -left-[37px] top-1.5 w-3 h-3 rounded-full border border-gold bg-cream" />
+                                        <h4 className="font-heading text-lg text-navy">{item.title}</h4>
+                                        <p className="text-sm text-charcoal/70 mt-1">{item.inst}</p>
+                                        <p className="text-xs text-muted mt-0.5">{item.loc}</p>
+                                    </div>
+                                ))}
                             </div>
-                            <p className="text-sm text-muted m-0 shrink-0">{item.period}</p>
                         </div>
-                    ))}
+
+                        {/* Certifications & Experience */}
+                        <div>
+                            <h3 className="text-xs font-bold text-slate uppercase tracking-widest mb-8">Certifications & Roles</h3>
+                            <div className="space-y-12">
+                                <div>
+                                    <h4 className="font-heading text-lg text-navy mb-4 border-b border-border/50 pb-2">Board Certifications</h4>
+                                    <ul className="space-y-3 text-sm text-charcoal/80">
+                                        <li className="flex items-start gap-3">
+                                            <span className="text-gold mt-1 text-xs">◆</span>
+                                            <span><strong>General Psychiatry</strong><br />American Board of Psychiatry & Neurology</span>
+                                        </li>
+                                        <li className="flex items-start gap-3">
+                                            <span className="text-gold mt-1 text-xs">◆</span>
+                                            <span><strong>Geriatric Psychiatry</strong><br />American Board of Psychiatry & Neurology</span>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h4 className="font-heading text-lg text-navy mb-4 border-b border-border/50 pb-2">Professional Roles</h4>
+                                    <ul className="space-y-4 text-sm text-charcoal/80">
+                                        <li>
+                                            <strong className="block text-navy">Consultant Psychiatrist</strong>
+                                            El Camino Hospital · 2016 – Present
+                                        </li>
+                                        <li>
+                                            <strong className="block text-navy">Staff Psychiatrist</strong>
+                                            County of Santa Clara · 2013 – 2026
+                                        </li>
+                                        <li>
+                                            <strong className="block text-navy">Private Practice</strong>
+                                            Bay Area · 2002 – Present
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </section>
+
+            {/* Legacy Footer Quote */}
+            <section className="text-center pb-20 px-6">
+                <p className="font-heading text-2xl text-navy/60 italic max-w-2xl mx-auto">
+                    "Expertise is not just about what you know—it's about how you listen."
+                </p>
             </section>
         </div>
     );

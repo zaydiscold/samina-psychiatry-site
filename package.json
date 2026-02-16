@@ -1,7 +1,7 @@
 {
-  "name": "dr_khan_next",
-  "version": "0.1.0",
-  "private": true,
+  "name": "dr-khan-psychiatry-website",
+  "version": "1.0.0",
+  "description": "Professional psychiatry website for Dr. Samina Khan, built by Zayd Khan.",
   "scripts": {
     "dev": "next dev",
     "build": "next build",

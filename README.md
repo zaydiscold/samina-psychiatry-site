@@ -1,17 +1,20 @@
 # Dr. Khan Psychiatry Website
 
-Professional website for Dr. Samina Khan, MD, a Board-Certified Psychiatrist in Mountain View, CA.
+**A professional portfolio site for my mom, Dr. Samina Khan.**  
+*Built with love by Zayd Khan.*
+
+This project is a high-performance, SEO-optimized website for a private psychiatry practice in the Bay Area. It features a "Luxury Editorial" design aesthetic, custom typography, and a mobile-first responsive layout.
 
 ## Tech Stack
 - **Framework:** Next.js 14 (App Router)
-- **Styling:** Tailwind CSS
-- **Fonts:** Lora (Serif) & Inter (Sans)
+- **Styling:** Tailwind CSS (v4)
+- **Fonts:** Lora (Serif) & Inter (Sans), optimized with `next/font`
 - **Deployment:** GitHub Pages / Vercel
 
 ## Structure
-- `app/`: Pages and Layout
-- `components/`: Reusable UI components
-- `public/`: Static assets (images)
+- `app/`: Pages and Layout (Home, About, Services, Conditions, Contact)
+- `components/`: Reusable UI components (Navbar, Footer, SectionWrapper)
+- `public/`: Static assets (Logos, Placeholders)
 - `lib/`: Utilities and Schema markup
 
 ## Development
@@ -21,4 +24,4 @@ npm run dev
 ```
 
 ## Credits
-Designed and built by Zayd Khan.
+Designed and developed by **Zayd Khan** for Dr. Samina Khan.
